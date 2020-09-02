@@ -1,0 +1,35 @@
+{
+  "name": "arquivei/boltons-architecture-example",
+  "description": "An example of the PHP architecture used at Arquivei",
+  "keywords": [
+    "php",
+    "arquivei",
+    "architecture"
+  ],
+  "license": "BSD-2-Clause",
+  "type": "project",
+  "require": {
+    "php": "~7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Arquivei\\Boltons\\Example\\": "core/",
+      "Arquivei\\Boltons\\App\\Example\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Arquivei\\Boltons\\Example\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
